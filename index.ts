@@ -245,7 +245,7 @@ export class TranslateICUCustomParser {
       }
     } while (keys.length);
 
-    if (!target) {
+    if (!target && target !== 0 && target !== "0") {
       return key;
     }
 
